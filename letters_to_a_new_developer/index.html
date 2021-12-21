@@ -1,0 +1,547 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+    
+    
+      
+        <title>Letters to a new developer - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.edf004c2.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#about" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Letters to a new developer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Letters to a new developer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Letters to a new developer
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top" class="md-nav__link">
+    Top!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning" class="md-nav__link">
+    Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smaller-nuggets" class="md-nav__link">
+    Smaller Nuggets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encouragement" class="md-nav__link">
+    Encouragement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    Other
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top" class="md-nav__link">
+    Top!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning" class="md-nav__link">
+    Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smaller-nuggets" class="md-nav__link">
+    Smaller Nuggets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encouragement" class="md-nav__link">
+    Encouragement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    Other
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>Letters to a new developer</h1>
+
+<h3 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h3>
+<p>This is collection of articles from the blog <a href="https://letterstoanewdeveloper.com/">Letters To A New Developer – What I wish I had known when starting my development career</a>  that resonated with me and you might find useful as well. There is a corresponding book available through Safari Books, accessible with UA NetID. <a href="https://learning.oreilly.com/library/view/letters-to-a/9781484260746/">Letters to a New Developer: What I Wish I Had Known When Starting My Development Career [Book]</a></p>
+<h3 id="top">Top!<a class="headerlink" href="#top" title="Permanent link">&para;</a></h3>
+<p><a href="https://letterstoanewdeveloper.com/2019/04/01/the-best-code-is-no-code/">The best code is no code</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/08/12/there-are-no-adults-in-the-room/">There are no adults in the room</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/09/09/think-about-how-things-can-go-wrong/">Think about how things can go wrong</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/11/18/the-perfect-is-the-enemy-of-the-good-and-the-done/">The perfect is the enemy of the good (and the done)</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/12/23/no-choice-is-permanent/">No choice is permanent</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/01/20/on-debugging/">On debugging</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/01/27/software-is-about-people-not-code/">Software is about people, not code</a></p>
+<blockquote>
+<p>Most people don’t know or care about the code. They’re just trying to get something done. The most beautiful, well tested, flexible, configurable, documented, future proofed codebase that does the wrong thing is useless.</p>
+</blockquote>
+<p><a href="https://letterstoanewdeveloper.com/2021/09/13/always-be-replacing-yourself/">Always be replacing yourself</a></p>
+<h3 id="learning">Learning<a class="headerlink" href="#learning" title="Permanent link">&para;</a></h3>
+<p><a href="https://letterstoanewdeveloper.com/2019/03/25/use-an-rss-reader/">Use an RSS Reader</a></p>
+<blockquote>
+<p>I use Feedly and subscribe to hundreds of feeds and dozens of newsletters, which themselves are generally lists of links.</p>
+</blockquote>
+<p><a href="https://letterstoanewdeveloper.com/2019/08/05/subscribe-to-a-weekly-link-newsletter/">Subscribe to a weekly link newsletter</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/03/08/avoid-the-impossible-goal-of-being-a-know-it-all/">Avoid The Impossible Goal of Being a Know It All</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/12/03/dont-be-afraid-to-ask-questions/">Don’t be afraid to ask questions</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/08/16/why-developers-should-engage-in-continuous-learning/">Why Developers Should Engage in Continuous Learning</a></p>
+<blockquote>
+<p><em>Think about the terms you use in the query.</em> I was looking recently for a way to use "tags" in Sharepoint. Tags didn't get what I wanted. I tried labels, which in Microsoft land is all about retention. After some permutations "folksonomy" is what I really wanted. Learning the jargon of different areas can be really important.</p>
+</blockquote>
+<p><a href="https://letterstoanewdeveloper.com/2019/10/28/read-great-books-about-software-development/">Read great books about software development</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/03/09/never-stop-learning/">Never stop learning</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/08/16/why-developers-should-engage-in-continuous-learning/">Why Developers Should Engage in Continuous Learning</a></p>
+<h3 id="communication">Communication<a class="headerlink" href="#communication" title="Permanent link">&para;</a></h3>
+<p><a href="https://letterstoanewdeveloper.com/2019/12/05/talk-first-code-later/">Talk first, code later</a> </p>
+<p><a href="https://letterstoanewdeveloper.com/2019/06/07/writing-is-an-undervalued-engineering-skill/">Writing Is An Undervalued Engineering Skill</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/03/16/how-to-manage-one-to-ones/">How to manage one to ones</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/09/02/the-art-to-and-power-of-saying-no/">The Art To And Power Of Saying No</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/03/23/you-know-more-than-you-think/">You know more than you think</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/08/03/seek-feedback-loops/">Seek feedback loops</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/12/28/make-the-ask/">Make the ask</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/03/04/tips-for-building-your-work-network/">Tips for Building Your Work Network</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/01/11/why-and-how-to-improve-your-writing-skills-as-a-software-developer/">Why and how to improve your writing skills as a software developer</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/04/26/be-a-mentor/">Be a mentor</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/09/30/speaking-isnt-as-scary-as-you-think-eventually/">Speaking isn’t as scary as you think, eventually</a></p>
+<h3 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h3>
+<p><a href="https://letterstoanewdeveloper.com/2021/03/15/use-the-clipboard-from-the-command-line/">Use the clipboard from the command line</a></p>
+<blockquote>
+<p>Related tip and super power tool is using a cliipboard manager (a tool that lets you copy, cut and paste items as many times as you need). In windows it's built in, win+V. On my mac I use the clipboard tool built into "BetterTouchTool", which I've customized in a few different ways. Flycut is another popular option.</p>
+</blockquote>
+<p><a href="https://letterstoanewdeveloper.com/2021/02/08/google-cant-help-if-you-dont-know-the-words/">Google can’t help if you don’t know the words</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/02/04/learn-the-command-line/">Learn the command line</a> (Related: <a href="https://medium.com/fundbox-engineering/cheating-at-a-company-group-activity-using-unix-tools-5c1d706f3d58">Cheating at a Company Group Activity Using Unix Tools</a> )</p>
+<p><a href="https://letterstoanewdeveloper.com/2018/09/21/learn-a-text-editor/">Learn a text editor</a>   </p>
+<p><a href="https://letterstoanewdeveloper.com/2018/09/21/learn-version-control/">Learn Version Control</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/04/01/learn-to-use-google-and-use-it-well/">Learn to use Google, and use it well</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/04/08/learn-to-use-a-debugger/">Learn to use a debugger</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/04/15/read-the-documentation/">Read the documentation</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/07/29/learn-a-little-jq-awk-and-sed/">Learn a little jq, awk and sed</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/11/11/learn-sql/">Learn SQL</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/11/04/use-copy-paste-as-much-as-you-can/">Use copy/paste as much as you can</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/12/09/learn-to-type-quickly/">Learn to type quickly</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/07/27/write-good-commit-messages/">Write good commit messages</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/11/16/save-off-context/">Save off context</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/02/01/use-your-shells-history/">Use your shell’s history</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/06/21/learn-curl/">Learn curl</a></p>
+<h3 id="smaller-nuggets">Smaller Nuggets<a class="headerlink" href="#smaller-nuggets" title="Permanent link">&para;</a></h3>
+<p><a href="https://letterstoanewdeveloper.com/2019/02/01/what-mitchell-learned-in-his-first-two-years-as-a-software-developer/">What Mitchell learned in his first two years as a software developer</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/01/18/letters-to-a-new-developer-from-joel-spolsky/">Letters to a new developer from Joel Spolsky</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/10/19/laziness-impatience-hubris/">Laziness, impatience, hubris</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/06/14/what-is-hackernews-best-advice-to-new-developers/">What is HackerNews’ Best Advice to New Developers</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/07/12/things-learned-the-hard-way/">Things learned the hard way</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/09/06/things-learned-from-a-senior-developer/">Things learned from a senior developer</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/10/31/three-mantras-to-live-by/">Three Mantras to Live By</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/02/06/contextual-advice-for-new-developers/">Contextual advice for new developers</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/06/01/a-letter-to-myself-as-a-fresh-software-engineer/">A letter to myself as a fresh software engineer</a></p>
+<h3 id="encouragement">Encouragement<a class="headerlink" href="#encouragement" title="Permanent link">&para;</a></h3>
+<p><a href="https://letterstoanewdeveloper.com/2019/01/11/you-can-do-this/">You can do this.</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/04/27/it-never-gets-easier-you-just-go-faster/">“It never gets easier, you just go faster.”</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/12/31/get-used-to-failure/">Get used to failure</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/10/21/admit-your-weaknesses/">Admit your weaknesses</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/11/26/making-mistakes-is-ok/">Making mistakes is OK</a>
+One line I take issue with, <em>If you work in an environment where you cannot acknowledge errors, make plans to leave as soon as possible.</em> I completely agree with the sentiment; you should never need to hide mistakes. However, consider a more nuanced approach than immediately finding a new place to work. Try and change the culture if you can. </p>
+<p><a href="https://letterstoanewdeveloper.com/2019/05/31/mistakes-are-forgiven-hiding-them-is-not/">Mistakes Are Forgiven, Hiding Them Is Not</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/05/10/be-a-great-developer-today/">Be a great developer today</a></p>
+<blockquote>
+<p><em>One isn’t required to know everything when one walks in the door, but one is expected to leave work each day having laid a few more bricks on top of an ever expanding foundation.</em></p>
+</blockquote>
+<h3 id="other">Other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h3>
+<p><a href="https://letterstoanewdeveloper.com/2019/12/26/the-care-and-feeding-of-developers/">The care and feeding of developers</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/02/15/outcomes-over-output/">Outcomes over output</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/02/03/develop-empathy/">Develop empathy</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/12/28/write-that-down/">Write that down!</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/09/16/learn-to-look-around-corners/">Learn to look around corners</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/07/19/act-like-an-owner/">Act like an owner</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/11/19/show-gratitude/">Show gratitude</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/08/09/write-a-brag-document/">Write a brag document</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/11/25/what-is-the-best-surprise-of-being-a-new-developer/">What is the best surprise of being a new developer?</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/10/17/know-when-to-throw-in-the-towel/">Know when to throw in the towel</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/10/22/know-when-to-not-throw-in-the-towel/">Know when to not throw in the towel</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2018/10/12/understand-the-business/">Understand the business</a></p>
+<blockquote>
+<p><em>Your code is written to further some end.</em></p>
+</blockquote>
+<p><a href="https://letterstoanewdeveloper.com/2018/09/25/over-index-in-your-first-few-months/">Over-index in your first few months</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/04/26/you-get-what-you-give/">‘You get what you give’</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/05/17/egoless-programming/">Egoless programming</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/05/27/consistency-is-key/">Consistency Is Key</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/06/10/learn-to-explain-concepts-to-non-technical-users/">Learn To Explain Concepts To Non-Technical Users</a></p>
+<blockquote>
+<p><em>One thing I’ve learned over time is that if you can’t explain a technology choice in a way that a non technical user can understand, you don’t understand it</em></p>
+</blockquote>
+<p><a href="https://letterstoanewdeveloper.com/2019/06/17/everyone-including-you-has-something-to-teach/">Everyone, Including You, Has Something To Teach</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/07/05/assume-positive-intent/">Assume Positive Intent</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/07/08/there-is-no-perfect-system-its-all-about-the-tradeoffs/">There is no perfect system, it’s all about the tradeoffs</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2019/07/15/what-if-i-have-to-make-a-technical-decision-and-i-dont-know-the-right-answer/">What if I have to make a technical decision and I don’t know the right answer?</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/03/19/why-software-engineers-are-grumpy/">Why software engineers are grumpy</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/07/13/coding-is-like-a-puzzle/">Coding is like a puzzle</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/08/24/when-do-you-feel-like-youre-senior/">When do you feel like you’re “senior”</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2020/11/09/create-value-for-people/">Create Value for People</a></p>
+<p><a href="https://letterstoanewdeveloper.com/2021/01/18/think-first-about-what-problem-this-is-solving-and-for-whom/">Think first about what problem this is solving and for whom</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      
+    
+  </body>
+</html>
