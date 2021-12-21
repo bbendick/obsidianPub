@@ -1,4 +1,5 @@
-A collection of articles from the blog [Letters To A New Developer – What I wish I had known when starting my development career](https://letterstoanewdeveloper.com/)  that resonated with me and you might find useful as well. 
+### About
+This is collection of articles from the blog [Letters To A New Developer – What I wish I had known when starting my development career](https://letterstoanewdeveloper.com/)  that resonated with me and you might find useful as well. There is a corresponding book available through Safari Books, accessible with UA NetID. [Letters to a New Developer: What I Wish I Had Known When Starting My Development Career [Book]](https://learning.oreilly.com/library/view/letters-to-a/9781484260746/)
 
 ### Top!
 
